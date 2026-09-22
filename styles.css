@@ -58,13 +58,13 @@ document flow and just place them exactly where I want them (for many elements, 
 /* Halo around the planet */
 #halo {   
     position:absolute;
-    height:200px;
-    width:500px;
+    height:300px;
+    width:300px;
     top:50%;
     left:50%;
     transform: translate(-50%, -50%);
     border-radius:50%;
-    background: radial-gradient(circle, rgba(255,255,0,0.75) 0%, rgba(255,255,0,0) 50%);
+    background: radial-gradient(circle, rgba(255, 255, 0, 0.904) 0%, rgba(202, 149, 25, 0) 50%);
     transition: transform 0.3s ease;
 }
 
@@ -87,12 +87,12 @@ document flow and just place them exactly where I want them (for many elements, 
 .text {
     position: absolute;
     top: 60px;
-    left: 40px;
+    left: 20px;
     color: #ccc;
-    font-size: 40px;
+    font-size: 30px;
     font-family:'Courier New', Courier, monospace;
     text-align: center;
-    transform: rotate(140deg);
+    transform: rotate(180deg);
     z-index:2;
     transition: color .5s ease;
 }
@@ -117,7 +117,7 @@ document flow and just place them exactly where I want them (for many elements, 
 }
 
 #planetParent:hover #halo { 
-    transform: translate(-50%,-50%) scale(2);
+    transform: translate(-50%,-50%) scale(4);
     transition: ease-in-out 0.5s;
 }
 
